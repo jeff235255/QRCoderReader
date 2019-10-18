@@ -1,3 +1,49 @@
 page-home {
+  .qrcode-container {
+    padding-top: 60px;
+    text-align: center;
+  }
 
+  h3 {
+    color: red;
+    font-size: 36px;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .btn-label {
+    margin-top: 30px;
+    display: inline-block;
+    background: url('../assets/imgs/qrcode_icon.svg') 50% 50% no-repeat;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    position: relative;
+    top: 11px;
+    left: 10px;
+
+    input {
+      position: absolute;
+      overflow: hidden;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+    }
+  }
+
+  .txt-center {
+    text-align: center;
+  }
+
+  .result {
+    font-size: 1.8rem;
+    background: #ccc;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 300px;
+  }
 }

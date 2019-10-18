@@ -1,14 +1,23 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <div class="container">
+    <div class="qrcode-container">
+      <h3>COMPASS QR-CODE READER</h3>
+    </div>
+
+    <p class="txt-center">
+      Upload your QR code
+      <label class="btn-label">
+        <input type="file"
+         accept="image/*"
+         capture="environment"
+         (change)="openQRCamera($event)"
+         tabindex="-1">
+      </label>
+    </p>
+
+    <label >Results:</label>
+    <div class="result">
+      {{qrCodeData}}
+    </div>
+  </div>
 </ion-content>
